@@ -1,5 +1,9 @@
 # Awesome-LLM-Fine-Tuning
 
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome-LLM-Fine-Tuning — curated SaaS platforms and open-source frameworks for fine-tuning LLMs" width="100%"/>
+</p>
+
 > **LLM Fine-Tuning tools, compared:** the most complete curated list of **LLM fine-tuning platforms** (SaaS) and **open-source fine-tuning frameworks** — with side-by-side **pricing**, **free tier limits** and company scale. Covers **LoRA, QLoRA, RLHF, DPO, supervised fine-tuning (SFT), PEFT and full-parameter training** for Llama, Qwen, Mistral, Gemma, DeepSeek and Mixtral models.
 
 ## Top LLM Fine-Tuning Ecosystem

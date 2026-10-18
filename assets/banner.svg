@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Awesome-LLM-Fine-Tuning banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="55%" stop-color="#131a35"/>
+      <stop offset="100%" stop-color="#1b1040"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1020" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#0b1020" stop-opacity="0.90"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+
+  <!-- drifting orbs (dynamic, background layer) -->
+  <g>
+    <circle cx="150" cy="90" r="70" fill="#818cf8" opacity="0.20" filter="url(#soft)">
+      <animate attributeName="cx" values="150;260;150" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="90;140;90" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="320" r="85" fill="#5eead4" opacity="0.16" filter="url(#soft)">
+      <animate attributeName="cx" values="1040;930;1040" dur="13s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="320;260;320" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="70" r="55" fill="#f472b6" opacity="0.14" filter="url(#soft)">
+      <animate attributeName="r" values="55;75;55" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- flowing training-loss curve (dynamic, behind title) -->
+  <g fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.75">
+    <path d="M0 330 C 150 260, 220 320, 330 250 S 520 200, 640 215 S 860 140, 1000 165 S 1140 120, 1200 130">
+      <animate attributeName="stroke-dasharray" values="0 2400;2400 0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 360 C 180 320, 260 350, 400 300 S 620 270, 760 285 S 1000 230, 1200 240" stroke-opacity="0.4" stroke-width="2">
+      <animate attributeName="stroke-dashoffset" values="2400;0" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- pulsing metric bars (dynamic) -->
+  <g opacity="0.55">
+    <rect x="60" y="300" width="26" height="60" rx="6" fill="#818cf8">
+      <animate attributeName="height" values="20;60;35;60" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="340;300;325;300" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="96" y="300" width="26" height="60" rx="6" fill="#5eead4">
+      <animate attributeName="height" values="55;25;60;40" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="305;335;300;320" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1078" y="300" width="26" height="60" rx="6" fill="#f472b6">
+      <animate attributeName="height" values="30;58;42;58" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="330;302;318;302" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1114" y="300" width="26" height="60" rx="6" fill="#818cf8">
+      <animate attributeName="height" values="60;34;48;34" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="300;326;312;326" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- floating tech pills (dynamic, background edges only) -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="600">
+    <g>
+      <rect x="40" y="60" width="92" height="34" rx="17" fill="#818cf8" opacity="0.9"/>
+      <text x="86" y="83" text-anchor="middle" fill="#0b1020">LoRA</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 14 -12; 0 0" dur="7s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="150" y="46" width="104" height="34" rx="17" fill="#5eead4" opacity="0.9"/>
+      <text x="202" y="69" text-anchor="middle" fill="#0b1020">QLoRA</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -12 14; 0 0" dur="8.5s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="1010" y="52" width="96" height="34" rx="17" fill="#f472b6" opacity="0.9"/>
+      <text x="1058" y="75" text-anchor="middle" fill="#0b1020">RLHF</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -16 10; 0 0" dur="7.5s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="900" y="46" width="86" height="34" rx="17" fill="#facc15" opacity="0.9"/>
+      <text x="943" y="69" text-anchor="middle" fill="#0b1020">DPO</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 12 16; 0 0" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- foreground title plate: drawn last so nothing overlaps it -->
+  <g>
+    <rect x="180" y="140" width="840" height="140" rx="18" fill="url(#plate)" stroke="#5eead4" stroke-opacity="0.55" stroke-width="2"/>
+    <rect x="180" y="140" width="840" height="6" rx="3" fill="url(#line)">
+      <animate attributeName="opacity" values="1;0.45;1" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="600" y="205" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="#f8fafc">
+      Awesome-LLM-Fine-Tuning
+    </text>
+    <text x="600" y="248" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#c7d2fe">
+      Curated SaaS platforms &amp; open-source frameworks for fine-tuning LLMs
+    </text>
+  </g>
+
+  <!-- static sparkles only at the far margins, never over the title -->
+  <g fill="#ffffff">
+    <circle cx="70" cy="200" r="3" opacity="0.8">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1150" cy="220" r="3" opacity="0.8">
+      <animate attributeName="opacity" values="1;0.2;1" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
