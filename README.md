@@ -167,4 +167,5 @@ Thank you for taking the time to read **Awesome-LLM-Fine-Tuning** — your suppo
 🔍 **Popular searches:** LLM fine-tuning platforms · LoRA fine-tuning tools · QLoRA training · RLHF and DPO libraries · open-source LLM training · best fine-tuning framework 2026 · LLM fine-tuning pricing comparison · PEFT library.
 
 🙌 **Made for ML engineers, AI researchers, data scientists, and open-source enthusiasts.**  
-Let's make LLM fine-tuning more accessible, efficient, and vendor-neutral.
+Let's make LLM fine-tuning more accessible, efficient, and vendor-neutral.# Awesome-LLM-Fine-Tuning
+
