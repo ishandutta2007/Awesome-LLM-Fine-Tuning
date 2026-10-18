@@ -149,6 +149,15 @@ No — evaluate prompting, retrieval-augmented generation (RAG) and in-context e
 
 - Always evaluate whether prompting or RAG can solve your problem before committing to fine-tuning — 80% of perceived fine-tuning needs are better addressed upstream .
 
+## 🙏 Support
+
+Thank you for taking the time to read **Awesome-LLM-Fine-Tuning** — your support keeps this list maintained and free for everyone. If it helped you, we'd sincerely appreciate it if you would:
+
+- ⭐ **Star** this repository
+- 🍴 **Fork** it and make it your own
+- 🔁 **Share** it with friends, teammates and on social media
+- ☕ **Buy a coffee** via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)
+
 ## 📈 Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-LLM-Fine-Tuning&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-LLM-Fine-Tuning&type=date&legend=top-left)
