@@ -2,31 +2,19 @@
 
 ## Top LLM Fine-Tuning Ecosystem
 
-
-
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 
 *Focused on Parameter-Efficient Adaptation, Instruction Tuning & Model Customization*  
 
 **Last updated: March 2026**
 
-
-
 This repository tracks notable **SaaS platforms** and **open-source projects** for **LLM Fine-Tuning**. These tools enable supervised fine-tuning (SFT), LoRA/QLoRA adaptation, reinforcement learning from human feedback (RLHF), direct preference optimization (DPO), and full-parameter training of open-source and proprietary language models.
-
-
 
 **Examples** include Predibase, Lamini, Scale AI, Together AI, Fireworks AI, OctoAI, MonsterAPI, RunPod, Baseten, and Modal (the category leaders).
 
-
-
 **Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, consumer-hardware training, and transparent model customization — ideal for ML engineers, researchers, and developers building vendor-neutral fine-tuning pipelines.
 
-
-
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
 
 ## Table of Contents
 
@@ -38,75 +26,22 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - [Disclaimer](#disclaimer)
 
-
-
 ## SaaS/Hosted Platforms
 
-
-
-- **[Predibase](https://predibase.com/)**  
-
-  LoRA-centric fine-tuning platform with LoRAX multi-adapter serving; enables thousands of fine-tuned adapters on a single base model deployment .
-
-
-
-- **[Lamini](https://www.lamini.ai/)**  
-
-  Enterprise platform for fine-tuning and serving open-source LLMs with focus on data privacy and compliance.
-
-
-
-- **[Scale AI](https://scale.com/)**  
-
-  Data labeling and model evaluation platform with fine-tuning services for enterprise AI teams.
-
-
-
-- **[Together AI](https://www.together.ai/)**  
-
-  Open-model fine-tuning and inference platform with pay-per-token training; supports LoRA and full fine-tuning of Llama, Qwen, and Mixtral models .
-
-
-
-- **[Fireworks AI](https://fireworks.ai/)**  
-
-  Fast fine-tuning and serving of open models with multi-LoRA support and sub-second time-to-first-token (TTFT) for optimized inference .
-
-
-
-- **[OctoAI](https://octoai.cloud/)**  
-
-  Cloud platform for deploying and fine-tuning generative AI models with optimized inference infrastructure.
-
-
-
-- **[MonsterAPI](https://monsterapi.ai/)**  
-
-  GPU cloud platform offering fine-tuning services and serverless inference for open-source LLMs.
-
-
-
-- **[RunPod](https://www.runpod.io/)**  
-
-  GPU cloud with fine-tuning templates and serverless endpoints; popular for cost-effective training of custom models .
-
-
-
-- **[Baseten](https://www.baseten.co/)**  
-
-  Model serving and fine-tuning platform focused on production deployment of custom models.
-
-
-
-- **[Modal](https://modal.com/)**  
-
-  Serverless GPU platform with Python decorator-based infrastructure; cold starts around 1 second and second-level billing for fine-tuning workflows .
-
-
+| Platform | Description | Pricing (starting tier) | Free Tier Limits |
+|---|---|---|---|
+| **[Predibase](https://predibase.com/)** | LoRA-centric fine-tuning platform with LoRAX multi-adapter serving; enables thousands of fine-tuned adapters on a single base model deployment. | Last published pay-as-you-go rates: serverless serving ≈ **$0.0002 per 1K tokens ($0.20 / 1M tokens)** for fine-tuned Llama-2-7B; fine-tuned models averaged **<$8 per job** in GPU cost. Now part of Rubrik — no current public rate card. | **14-day free trial**: unlimited fine-tuning & serving of Llama-2-13B at no cost (launched Oct 2023; eligibility unverified after the Rubrik acquisition). |
+| **[Lamini](https://www.lamini.ai/)** | Enterprise platform for fine-tuning and serving open-source LLMs with focus on data privacy and compliance. | Pay-as-you-go **On-Demand** GPU cluster: flat **per-token inference** rate plus a **per-tuning-step** charge (exact rate card quoted via [lamini.ai/pricing](https://www.lamini.ai/pricing)). | **$300 in one-time signup credits** for tuning, deployment and inference on the hosted cluster — no recurring free allowance. |
+| **[Scale AI](https://scale.com/)** | Data labeling and model evaluation platform with fine-tuning services for enterprise AI teams. | Enterprise post-training sold **per project** via sales quote; Scale's own published example projects budgeted **~$890** and **~$230** of training compute per model. | No free-for-ever plan and no trial credits — projects are scoped and priced by contract with Scale's services team. |
+| **[Together AI](https://www.together.ai/)** | Open-model fine-tuning and inference platform with pay-per-token training; supports LoRA and full fine-tuning of Llama, Qwen, and Mixtral models. | LoRA SFT from **$0.34 per 1M training tokens**, with a **$4 minimum per fine-tuning job** (rates vary by model). | Free inference on open "Free" models at **$0 / 1M tokens**, but fine-tuning needs prepaid credits: **$15 minimum first credit purchase** ($5 on later top-ups), no trial days. |
+| **[Fireworks AI](https://fireworks.ai/)** | Fast fine-tuning and serving of open models with multi-LoRA support and sub-second time-to-first-token (TTFT) for optimized inference. | LoRA SFT from **$0.50 per 1M training tokens** (models ≤ 16B params); inference from $0.10 / 1M tokens. | **$1 one-time starter credit** for new accounts — provisioning pauses once it's spent; no recurring free-for-ever quota. |
+| **[OctoAI](https://octoai.cloud/)** | Cloud platform for deploying and fine-tuning generative AI models with optimized inference infrastructure. *(Commercial service wound down Oct 31, 2024; acquired by NVIDIA.)* | Last published rates: **Llama 3 8B $0.15 / 1M tokens**, Mixtral 8x7B **$0.30 in / $0.50 out per 1M tokens**, Mistral 7B $0.10 in / $0.25 out. | **$10 one-time signup credit** on self-serve accounts (historical); no free tier since the Oct 31, 2024 shutdown. |
+| **[MonsterAPI](https://monsterapi.ai/)** | GPU cloud platform offering fine-tuning services and serverless inference for open-source LLMs. | Pay-as-you-go **prepaid credits** (credit packs in the dashboard); per-GPU-hour list price is not publicly published. | **5,000 free credits when signing up with GitHub** (2,500 via email), plus campaign codes such as **10,000 credits** (2024 `UFOsarereal` offer). |
+| **[RunPod](https://www.runpod.io/)** | GPU cloud with fine-tuning templates and serverless endpoints; popular for cost-effective training of custom models. | Community Cloud from **$0.22 / GPU-hr (RTX 3090)**, **$0.34 / GPU-hr (RTX 4090)**, **$1.19 / GPU-hr (A100 80GB)** — billed per second. | No free-for-ever GPU tier; conditional credits: **$1,000 for accepted Startup Program Starter teams** and **$5–$500 referral credit** after a $10 top-up (most regions get $5). |
+| **[Baseten](https://www.baseten.co/)** | Model serving and fine-tuning platform focused on production deployment of custom models. | Per-second GPU billing: **T4 $0.01052 / GPU-min (~$0.631 / hr)**, **L4 $0.01414 / GPU-min (~$0.848 / hr)**; Basic plan has a **$0/mo platform fee**. | **Trial credits issued to every new workspace on signup** (amount not published in the billing docs); no perpetual $0 plan. |
+| **[Modal](https://modal.com/)** | Serverless GPU platform with Python decorator-based infrastructure; cold starts around 1 second and second-level billing for fine-tuning workflows. | **T4 GPU $0.000164 / GPU-second (~$0.59 / GPU-hr)**, billed by the second with nothing charged while idle. | **Starter plan $0/mo with $30/month in recurring compute credits**, 3 seats, 100 containers, 10-way GPU concurrency, 1 TiB/month egress. |
 
 ## Open-Source GitHub Projects
-
-
 
 - **[Alpaca-LoRA](https://github.com/tloen/alpaca-lora)**  
 
@@ -196,11 +131,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 **Frameworks for building custom systems**: Combine **Unsloth** or **Axolotl** for training, **PEFT** for parameter-efficient methods, **TRL** for alignment, **LLaMA-Factory** for UI-driven experimentation, and **vLLM** or **SGLang** for high-throughput serving. For distributed training, layer in **DeepSpeed** or **FSDP**. For LoRA serving at scale, **LoRAX** (Predibase) enables thousands of adapters on a single base model .
 
-
-
 ## How to Contribute
-
-
 
 1. Fork the repo.
 
@@ -210,15 +141,9 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 4. Submit PR with a short explanation.
 
-
-
 Star the repo if you find it useful!
 
-
-
 ## Disclaimer
-
-
 
 - This is a **community-curated** list — not exhaustive and not an endorsement.
 
@@ -228,14 +153,7 @@ Star the repo if you find it useful!
 
 - Always evaluate whether prompting or RAG can solve your problem before committing to fine-tuning — 80% of perceived fine-tuning needs are better addressed upstream .
 
-
-
 ---
 
-
-
 **Made for ML engineers, AI researchers, data scientists, and open-source enthusiasts.**  
-
-Let's make LLM fine-tuning more accessible, efficient, and vendor-neutral.
-# Awesome-LLM-Fine-Tuning
-
+Let's make LLM fine-tuning more accessible, efficient, and vendor-neutral.
