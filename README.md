@@ -1,5 +1,7 @@
 # Awesome-LLM-Fine-Tuning
 
+> **LLM Fine-Tuning tools, compared:** the most complete curated list of **LLM fine-tuning platforms** (SaaS) and **open-source fine-tuning frameworks** — with side-by-side **pricing**, **free tier limits** and company scale. Covers **LoRA, QLoRA, RLHF, DPO, supervised fine-tuning (SFT), PEFT and full-parameter training** for Llama, Qwen, Mistral, Gemma, DeepSeek and Mixtral models.
+
 ## Top LLM Fine-Tuning Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
@@ -18,13 +20,23 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [What Is LLM Fine-Tuning?](#what-is-llm-fine-tuning)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
 - [How to Contribute](#how-to-contribute)
 
+- [FAQ](#faq)
+
 - [Disclaimer](#disclaimer)
+
+## What Is LLM Fine-Tuning?
+
+**LLM fine-tuning** is the process of continuing the training of a large language model on a smaller, task-specific dataset so it learns a new skill, tone or domain at a fraction of the cost of pre-training. The most common techniques on this list are **parameter-efficient fine-tuning (PEFT)** methods such as **LoRA** and **QLoRA**, preference-alignment methods such as **RLHF** and **DPO**, classic **supervised fine-tuning (SFT)**, and **full-parameter (full-rank) training** for the largest models.
+
+Use this page to (1) **compare hosted LLM fine-tuning platforms** by starting price and free tier, and (2) **pick an open-source fine-tuning library** ranked by GitHub stars — then pair either with the evaluation and data-prep guidance in the sections below.
 
 ## SaaS/Hosted Platforms
 
@@ -94,6 +106,24 @@ Every entry carries a live star badge (links to the repository stargazers page) 
 
 Star the repo if you find it useful!
 
+## FAQ
+
+**What is the best LLM fine-tuning platform?**
+
+It depends on budget and scale. For cheap per-token training try **Together AI** ($0.34 / 1M training tokens) or **Fireworks AI** ($0.50 / 1M); for serverless GPU-hours try **Modal** (~$0.59 / GPU-hr with $30/month free credits) or **RunPod** ($0.22 / GPU-hr); for enterprise post-training and data pipelines, **Scale AI** and **Predibase**.
+
+**Which open-source library should I use to fine-tune an LLM?**
+
+**Unsloth** for single-GPU speed and low VRAM, **LLaMA-Factory** for a no-code UI over 100+ models, **Axolotl** for YAML-driven reproducible runs, **TRL + PEFT** for RLHF/DPO pipelines, and **DeepSpeed** or **FSDP** for multi-node training.
+
+**How much does LLM fine-tuning cost?**
+
+Hosted LoRA SFT starts around **$0.34–$0.50 per 1M training tokens**, while renting GPUs starts at **$0.22–$0.63 per GPU-hour** (RunPod, Modal, Baseten). A small LoRA run on a 7B–8B model typically costs single-digit dollars; see the pricing column above for exact starting rates and free tiers.
+
+**Is fine-tuning always necessary?**
+
+No — evaluate prompting, retrieval-augmented generation (RAG) and in-context examples first; roughly 80% of perceived fine-tuning needs are better addressed upstream.
+
 ## Disclaimer
 
 - This is a **community-curated** list — not exhaustive and not an endorsement.
@@ -105,6 +135,8 @@ Star the repo if you find it useful!
 - Always evaluate whether prompting or RAG can solve your problem before committing to fine-tuning — 80% of perceived fine-tuning needs are better addressed upstream .
 
 ---
+
+**Popular searches:** LLM fine-tuning platforms · LoRA fine-tuning tools · QLoRA training · RLHF and DPO libraries · open-source LLM training · best fine-tuning framework 2026 · LLM fine-tuning pricing comparison · PEFT library.
 
 **Made for ML engineers, AI researchers, data scientists, and open-source enthusiasts.**  
 Let's make LLM fine-tuning more accessible, efficient, and vendor-neutral.
