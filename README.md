@@ -35,17 +35,17 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 ## 📚 Table of Contents
 
-- [What Is LLM Fine-Tuning?](#what-is-llm-fine-tuning)
+- [What Is LLM Fine-Tuning?](#-what-is-llm-fine-tuning)
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+- [SaaS/Hosted Platforms](#-saashosted-platforms)
 
-- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Open-Source GitHub Projects](#-open-source-github-projects)
 
-- [How to Contribute](#how-to-contribute)
+- [How to Contribute](#-how-to-contribute)
 
-- [FAQ](#faq)
+- [FAQ](#-faq)
 
-- [Disclaimer](#disclaimer)
+- [Disclaimer](#-disclaimer)
 
 ## 🧠 What Is LLM Fine-Tuning?
 
@@ -139,7 +139,7 @@ Hosted LoRA SFT starts around **$0.34–$0.50 per 1M training tokens**, while re
 
 No — evaluate prompting, retrieval-augmented generation (RAG) and in-context examples first; roughly 80% of perceived fine-tuning needs are better addressed upstream.
 
-## ⚠️ Disclaimer
+## ⛔ Disclaimer
 
 - 📌 This is a **community-curated** list — not exhaustive and not an endorsement.
 
