@@ -28,6 +28,12 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
+### Sector Overview & Market Dynamics
+
+**Market size:** The global **LLM fine-tuning services** market was valued at **$1.38B in 2024** and is projected to reach **$13.65B by 2033** (28.7% CAGR) — covering custom model training, domain adaptation, data annotation and evaluation services (Growth Market Reports).
+
+**Structure:** The sector is **moderately fragmented, not winner-take-all**: hyperscalers (OpenAI, Google Cloud, Azure, AWS) compete with specialised post-training and GPU-inference platforms (Fireworks, Baseten, Modal, Together AI, RunPod, Scale), and no single provider holds a dominant share — buyers routinely multi-source across layers and model families.
+
 | Platform | Company Size (valuation / revenue) | Description | Pricing (starting tier) | Free Tier Limits |
 |---|---|---|---|---|
 | **[Scale AI](https://scale.com/)** | **$29B valuation** (Meta's $14.3B for 49%, Jun 2025); **$870M revenue (2024)**, ~$2B estimated 2025 | Data labeling and model evaluation platform with fine-tuning services for enterprise AI teams. | Enterprise post-training sold **per project** via sales quote; Scale's own published example projects budgeted **~$890** and **~$230** of training compute per model. | No free-for-ever plan and no trial credits — projects are scoped and priced by contract with Scale's services team. |
