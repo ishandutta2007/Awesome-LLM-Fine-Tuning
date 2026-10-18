@@ -6,23 +6,23 @@
 
 > **LLM Fine-Tuning tools, compared:** the most complete curated list of **LLM fine-tuning platforms** (SaaS) and **open-source fine-tuning frameworks** — with side-by-side **pricing**, **free tier limits** and company scale. Covers **LoRA, QLoRA, RLHF, DPO, supervised fine-tuning (SFT), PEFT and full-parameter training** for Llama, Qwen, Mistral, Gemma, DeepSeek and Mixtral models.
 
-## Top LLM Fine-Tuning Ecosystem
+## 🎯 Top LLM Fine-Tuning Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 
 *Focused on Parameter-Efficient Adaptation, Instruction Tuning & Model Customization*  
 
-**Last updated: March 2026**
+📅 **Last updated: March 2026**
 
 This repository tracks notable **SaaS platforms** and **open-source projects** for **LLM Fine-Tuning**. These tools enable supervised fine-tuning (SFT), LoRA/QLoRA adaptation, reinforcement learning from human feedback (RLHF), direct preference optimization (DPO), and full-parameter training of open-source and proprietary language models.
 
-**Examples** include Predibase, Lamini, Scale AI, Together AI, Fireworks AI, OctoAI, MonsterAPI, RunPod, Baseten, and Modal (the category leaders).
+💡 **Examples** include Predibase, Lamini, Scale AI, Together AI, Fireworks AI, OctoAI, MonsterAPI, RunPod, Baseten, and Modal (the category leaders).
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, consumer-hardware training, and transparent model customization — ideal for ML engineers, researchers, and developers building vendor-neutral fine-tuning pipelines.
+🔓 **Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, consumer-hardware training, and transparent model customization — ideal for ML engineers, researchers, and developers building vendor-neutral fine-tuning pipelines.
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+🎉 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
-## Table of Contents
+## 📚 Table of Contents
 
 - [What Is LLM Fine-Tuning?](#what-is-llm-fine-tuning)
 
@@ -36,21 +36,21 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - [Disclaimer](#disclaimer)
 
-## What Is LLM Fine-Tuning?
+## 🧠 What Is LLM Fine-Tuning?
 
 **LLM fine-tuning** is the process of continuing the training of a large language model on a smaller, task-specific dataset so it learns a new skill, tone or domain at a fraction of the cost of pre-training. The most common techniques on this list are **parameter-efficient fine-tuning (PEFT)** methods such as **LoRA** and **QLoRA**, preference-alignment methods such as **RLHF** and **DPO**, classic **supervised fine-tuning (SFT)**, and **full-parameter (full-rank) training** for the largest models.
 
 Use this page to (1) **compare hosted LLM fine-tuning platforms** by starting price and free tier, and (2) **pick an open-source fine-tuning library** ranked by GitHub stars — then pair either with the evaluation and data-prep guidance in the sections below.
 
-## SaaS/Hosted Platforms
+## 💼 SaaS/Hosted Platforms
 
-### Sector Overview & Market Dynamics
+### 🌍 Sector Overview & Market Dynamics
 
-**Market size:** The global **LLM fine-tuning services** market was valued at **$1.38B in 2024** and is projected to reach **$13.65B by 2033** (28.7% CAGR) — covering custom model training, domain adaptation, data annotation and evaluation services (Growth Market Reports).
+🗺️ **Market size:** The global **LLM fine-tuning services** market was valued at **$1.38B in 2024** and is projected to reach **$13.65B by 2033** (28.7% CAGR) — covering custom model training, domain adaptation, data annotation and evaluation services (Growth Market Reports).
 
-**Structure:** The sector is **moderately fragmented, not winner-take-all**: hyperscalers (OpenAI, Google Cloud, Azure, AWS) compete with specialised post-training and GPU-inference platforms (Fireworks, Baseten, Modal, Together AI, RunPod, Scale), and no single provider holds a dominant share — buyers routinely multi-source across layers and model families.
+🏗️ **Structure:** The sector is **moderately fragmented, not winner-take-all**: hyperscalers (OpenAI, Google Cloud, Azure, AWS) compete with specialised post-training and GPU-inference platforms (Fireworks, Baseten, Modal, Together AI, RunPod, Scale), and no single provider holds a dominant share — buyers routinely multi-source across layers and model families.
 
-| Platform | Company Size (valuation / revenue) | Description | Pricing (starting tier) | Free Tier Limits |
+| 🏢 Platform | 📈 Company Size (valuation / revenue) | 📝 Description | 💲 Pricing (starting tier) | 🎁 Free Tier Limits |
 |---|---|---|---|---|
 | **[Scale AI](https://scale.com/)** | **$29B valuation** (Meta's $14.3B for 49%, Jun 2025); **$870M revenue (2024)**, ~$2B estimated 2025 | Data labeling and model evaluation platform with fine-tuning services for enterprise AI teams. | Enterprise post-training sold **per project** via sales quote; Scale's own published example projects budgeted **~$890** and **~$230** of training compute per model. | No free-for-ever plan and no trial credits — projects are scoped and priced by contract with Scale's services team. |
 | **[Fireworks AI](https://fireworks.ai/)** | **$17.5B valuation** ($1.505B Series D, Jul 2026); **>$1B annualized revenue run-rate** | Fast fine-tuning and serving of open models with multi-LoRA support and sub-second time-to-first-token (TTFT) for optimized inference. | LoRA SFT from **$0.50 per 1M training tokens** (models ≤ 16B params); inference from $0.10 / 1M tokens. | **$1 one-time starter credit** for new accounts — provisioning pauses once it's spent; no recurring free-for-ever quota. |
@@ -63,11 +63,11 @@ Use this page to (1) **compare hosted LLM fine-tuning platforms** by starting pr
 | **[Predibase](https://predibase.com/)** | **Acquired by Rubrik for $100–500M (Jun 2025)**, terms undisclosed; **$28M+ raised** prior | LoRA-centric fine-tuning platform with LoRAX multi-adapter serving; enables thousands of fine-tuned adapters on a single base model deployment. | Last published pay-as-you-go rates: serverless serving ≈ **$0.0002 per 1K tokens ($0.20 / 1M tokens)** for fine-tuned Llama-2-7B; fine-tuned models averaged **<$8 per job** in GPU cost. Now part of Rubrik — no current public rate card. | **14-day free trial**: unlimited fine-tuning & serving of Llama-2-13B at no cost (launched Oct 2023; eligibility unverified after the Rubrik acquisition). |
 | **[MonsterAPI](https://monsterapi.ai/)** | **Undisclosed**; earliest disclosed funding **$1.1M pre-seed (2023)** | GPU cloud platform offering fine-tuning services and serverless inference for open-source LLMs. | Pay-as-you-go **prepaid credits** (credit packs in the dashboard); per-GPU-hour list price is not publicly published. | **5,000 free credits when signing up with GitHub** (2,500 via email), plus campaign codes such as **10,000 credits** (2024 `UFOsarereal` offer). |
 
-## Open-Source GitHub Projects
+## 🧩 Open-Source GitHub Projects
 
-Every entry carries a live star badge (links to the repository stargazers page) and the list is sorted by GitHub stars, descending. Newly added options are marked *(New addition)*.
+⭐ Every entry carries a live star badge (links to the repository stargazers page) and the list is sorted by GitHub stars, descending. Newly added options are marked *(New addition)*.
 
-| Project | Description |
+| 📦 Project | 📝 Description |
 |---|---|
 | **[Unsloth](https://github.com/unslothai/unsloth)** ![GitHub stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white) | **Fastest open-source library for local LLM fine-tuning** — optimized for low VRAM (even laptops), plug-and-play with Hugging Face models. Enables 2-5x faster training with reduced memory usage. |
 | **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** ![GitHub stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white) | **All-in-one fine-tuning UI and CLI** — supports 100+ models (LLaMA, Qwen, DeepSeek, Gemma, GLM, Mistral) with continuous pre-training, SFT, reward modeling, PPO, DPO, KTO, ORPO. Day-0 support for cutting-edge releases. |
@@ -96,9 +96,9 @@ Every entry carries a live star badge (links to the repository stargazers page) 
 | **[ZO2](https://github.com/liangyuwang/zo2)** ![GitHub stars](https://img.shields.io/github/stars/liangyuwang/zo2?style=social&color=white) | Zeroth-order offloading enabling **full-parameter fine-tuning of 175B LLMs with only 18GB GPU memory**. |
 | **[DeepSpeed-Chat-Extension](https://github.com/wangclnlp/DeepSpeed-Chat-Extension)** ![GitHub stars](https://img.shields.io/github/stars/wangclnlp/DeepSpeed-Chat-Extension?style=social&color=white) | Extensions for SFT and RLHF fine-tuning. |
 
-**Frameworks for building custom systems**: Combine **Unsloth** or **Axolotl** for training, **PEFT** for parameter-efficient methods, **TRL** for alignment, **LLaMA-Factory** for UI-driven experimentation, and **vLLM** or **SGLang** for high-throughput serving. For distributed training, layer in **DeepSpeed** or **FSDP**. For LoRA serving at scale, **LoRAX** (Predibase) enables thousands of adapters on a single base model .
+🧰 **Frameworks for building custom systems**: Combine **Unsloth** or **Axolotl** for training, **PEFT** for parameter-efficient methods, **TRL** for alignment, **LLaMA-Factory** for UI-driven experimentation, and **vLLM** or **SGLang** for high-throughput serving. For distributed training, layer in **DeepSpeed** or **FSDP**. For LoRA serving at scale, **LoRAX** (Predibase) enables thousands of adapters on a single base model .
 
-## How to Contribute
+## 🤝 How to Contribute
 
 1. Fork the repo.
 
@@ -108,9 +108,9 @@ Every entry carries a live star badge (links to the repository stargazers page) 
 
 4. Submit PR with a short explanation.
 
-Star the repo if you find it useful!
+⭐ Star the repo if you find it useful!
 
-## FAQ
+## ❓ FAQ
 
 **What is the best LLM fine-tuning platform?**
 
@@ -128,9 +128,9 @@ Hosted LoRA SFT starts around **$0.34–$0.50 per 1M training tokens**, while re
 
 No — evaluate prompting, retrieval-augmented generation (RAG) and in-context examples first; roughly 80% of perceived fine-tuning needs are better addressed upstream.
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-- This is a **community-curated** list — not exhaustive and not an endorsement.
+- 📌 This is a **community-curated** list — not exhaustive and not an endorsement.
 
 - Fine-tuning requires careful data preparation, evaluation harnesses, and validation splits to avoid overfitting and catastrophic forgetting.
 
@@ -140,7 +140,7 @@ No — evaluate prompting, retrieval-augmented generation (RAG) and in-context e
 
 ---
 
-**Popular searches:** LLM fine-tuning platforms · LoRA fine-tuning tools · QLoRA training · RLHF and DPO libraries · open-source LLM training · best fine-tuning framework 2026 · LLM fine-tuning pricing comparison · PEFT library.
+🔍 **Popular searches:** LLM fine-tuning platforms · LoRA fine-tuning tools · QLoRA training · RLHF and DPO libraries · open-source LLM training · best fine-tuning framework 2026 · LLM fine-tuning pricing comparison · PEFT library.
 
-**Made for ML engineers, AI researchers, data scientists, and open-source enthusiasts.**  
+🙌 **Made for ML engineers, AI researchers, data scientists, and open-source enthusiasts.**  
 Let's make LLM fine-tuning more accessible, efficient, and vendor-neutral.
