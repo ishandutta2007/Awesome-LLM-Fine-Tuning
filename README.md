@@ -49,91 +49,36 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Open-Source GitHub Projects
 
-- **[Alpaca-LoRA](https://github.com/tloen/alpaca-lora)**  
+Every entry carries a live star badge (links to the repository stargazers page) and the list is sorted by GitHub stars, descending. Newly added options are marked *(New addition)*.
 
-  **The foundational LoRA fine-tuning implementation** for LLaMA — instruct-tune on consumer hardware in under 5 hours on a single RTX 4090. Uses Hugging Face PEFT and bitsandbytes for cheap, efficient adaptation; 18.5k+ stars .
-
-
-
-- **[Unsloth](https://github.com/unslothai/unsloth)**  
-
-  **Fastest open-source library for local LLM fine-tuning** — optimized for low VRAM (even laptops), plug-and-play with Hugging Face models. Enables 2-5x faster training with reduced memory usage .
-
-
-
-- **[Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl)**  
-
-  Flexible LLM fine-tuning configuration framework supporting LoRA, QLoRA, multi-GPU, and custom training pipelines. YAML-driven configs for reproducible experiments .
-
-
-
-- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)**  
-
-  **All-in-one fine-tuning UI and CLI** — supports 100+ models (LLaMA, Qwen, DeepSeek, Gemma, GLM, Mistral) with continuous pre-training, SFT, reward modeling, PPO, DPO, KTO, ORPO. Day-0 support for cutting-edge releases .
-
-
-
-- **[TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)**  
-
-  Hugging Face's library for RLHF, DPO, PPO, and reward modeling. Essential for post-training alignment of LLMs .
-
-
-
-- **[PEFT](https://github.com/huggingface/peft)**  
-
-  **Parameter-Efficient Fine-Tuning library** — implements LoRA, adapters, prefix tuning, and other efficient methods. The foundation for most modern fine-tuning workflows .
-
-
-
-- **[DeepSpeed](https://github.com/microsoft/DeepSpeed)**  
-
-  Microsoft's deep learning optimization library for training massive models efficiently with memory and speed optimizations. Industry standard for scaling LLM training .
-
-
-
-- **[H2O LLM Studio](https://github.com/h2oai/h2o-llmstudio)**  
-
-  No-code GUI framework for fine-tuning LLMs with enterprise features. 4,366+ stars, designed for teams without deep ML expertise .
-
-
-
-- **[Oumi](https://github.com/oumi-ai/oumi)**  
-
-  **Comprehensive open platform for training, evaluating, and deploying foundation models** — 8,400+ stars. Zero boilerplate recipes for DeepSeek R1, Llama 3.1, Qwen, and vision models with remote cloud launch support .
-
-
-
-- **[Kiln](https://github.com/Kiln-AI/Kiln)**  
-
-  Easy tool for fine-tuning, synthetic data generation, and dataset collaboration. 4,051+ stars .
-
-
-
-- **[xTuring](https://github.com/stochasticai/xTuring)**  
-
-  Build, customize, and control your own LLMs from data preprocessing to fine-tuning. 2,663+ stars .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[LLM-Finetuning (ashishpatel26)](https://github.com/ashishpatel26/LLM-Finetuning)** — Comprehensive examples of fine-tuning with PEFT across multiple model families .
-
-- **[ZO2](https://github.com/liangyuwang/zo2)** — Zeroth-order offloading enabling **full-parameter fine-tuning of 175B LLMs with only 18GB GPU memory** .
-
-- **[DB-GPT-Hub](https://github.com/eosphoros-ai/DB-GPT-Hub)** — Text-to-SQL fine-tuning with models, datasets, and techniques .
-
-- **[Maestro (Roboflow)](https://github.com/roboflow/maestro)** — Streamlined fine-tuning for multimodal models (PaliGemma 2, Florence-2, Qwen2.5-VL) .
-
-- **[DeepSpeed-Chat-Extension](https://github.com/wangclnlp/DeepSpeed-Chat-Extension)** — Extensions for SFT and RLHF fine-tuning .
-
-- **[SimpleTuner](https://github.com/bghira/SimpleTuner)** — General fine-tuning kit for diffusion models .
-
-- **[OneTrainer](https://github.com/Nerogar/OneTrainer)** — One-stop solution for Stable Diffusion training needs .
-
-
+| Project | Description |
+|---|---|
+| **[Unsloth](https://github.com/unslothai/unsloth)** ![GitHub stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white) | **Fastest open-source library for local LLM fine-tuning** — optimized for low VRAM (even laptops), plug-and-play with Hugging Face models. Enables 2-5x faster training with reduced memory usage. |
+| **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** ![GitHub stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white) | **All-in-one fine-tuning UI and CLI** — supports 100+ models (LLaMA, Qwen, DeepSeek, Gemma, GLM, Mistral) with continuous pre-training, SFT, reward modeling, PPO, DPO, KTO, ORPO. Day-0 support for cutting-edge releases. |
+| **[DeepSpeed](https://github.com/microsoft/DeepSpeed)** ![GitHub stars](https://img.shields.io/github/stars/deepspeedai/DeepSpeed?style=social&color=white) | Microsoft's deep learning optimization library for training massive models efficiently with memory and speed optimizations. Industry standard for scaling LLM training. |
+| **[PEFT](https://github.com/huggingface/peft)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/peft?style=social&color=white) | **Parameter-Efficient Fine-Tuning library** — implements LoRA, adapters, prefix tuning, and other efficient methods. The foundation for most modern fine-tuning workflows. |
+| **[TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/trl?style=social&color=white) | Hugging Face's library for RLHF, DPO, PPO, and reward modeling. Essential for post-training alignment of LLMs. |
+| **[Alpaca-LoRA](https://github.com/tloen/alpaca-lora)** ![GitHub stars](https://img.shields.io/github/stars/tloen/alpaca-lora?style=social&color=white) | **The foundational LoRA fine-tuning implementation** for LLaMA — instruct-tune on consumer hardware in under 5 hours on a single RTX 4090. Uses Hugging Face PEFT and bitsandbytes for cheap, efficient adaptation. |
+| **[Llama Cookbook](https://github.com/meta-llama/llama-cookbook)** ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-cookbook?style=social&color=white) | **Meta's official Llama example recipes** — end-to-end fine-tuning, RAG and inference walkthroughs for Llama 3/3.1 models. *(New addition)* |
+| **[ms-swift](https://github.com/modelscope/ms-swift)** ![GitHub stars](https://img.shields.io/github/stars/modelscope/ms-swift?style=social&color=white) | ModelScope's Swift — **train/finetune 500+ LLM & multimodal models** (Qwen, Llama, DeepSeek, VL series) across LoRA/QLoRA/full-parameter settings. *(New addition)* |
+| **[Lit-GPT](https://github.com/Lightning-AI/litgpt)** ![GitHub stars](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=social&color=white) | Lightning AI's hackable CSV-config toolkit for **pre-training, fine-tuning and evaluating 100+ open LLMs** with MLflow tracking. *(New addition)* |
+| **[Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl)** ![GitHub stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social&color=white) | Flexible LLM fine-tuning configuration framework supporting LoRA, QLoRA, multi-GPU, and custom training pipelines. YAML-driven configs for reproducible experiments. |
+| **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** ![GitHub stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social&color=white) | **Scalable RLHF framework** — PPO, GRPO, DPO, RM and REINFORCE+ with Ray + vLLM + DeepSpeed orchestration for 70B+ models. *(New addition)* |
+| **[Oumi](https://github.com/oumi-ai/oumi)** ![GitHub stars](https://img.shields.io/github/stars/oumi-ai/oumi?style=social&color=white) | **Comprehensive open platform for training, evaluating, and deploying foundation models** — zero-boilerplate recipes for DeepSeek R1, Llama 3.1, Qwen, and vision models with remote cloud launch support. |
+| **[torchtune](https://github.com/meta-pytorch/torchtune)** ![GitHub stars](https://img.shields.io/github/stars/meta-pytorch/torchtune?style=social&color=white) | **Meta's native PyTorch library for LLM post-training** — clean recipes for SFT, DPO, RLHF and full fine-tuning of Llama 3.2/3.3. *(New addition)* |
+| **[XTuner](https://github.com/InternLM/xtuner)** ![GitHub stars](https://img.shields.io/github/stars/InternLM/xtuner?style=social&color=white) | **Auto-generated fine-tuning configs** for 100+ LLMs and MLLMs — supports LoRA/QLoRA/full SFT, multi-GPU and deep-speed parallelism from a single YAML. *(New addition)* |
+| **[Kiln](https://github.com/Kiln-AI/Kiln)** ![GitHub stars](https://img.shields.io/github/stars/Kiln-AI/Kiln?style=social&color=white) | Easy tool for fine-tuning, synthetic data generation, and dataset collaboration. |
+| **[H2O LLM Studio](https://github.com/h2oai/h2o-llmstudio)** ![GitHub stars](https://img.shields.io/github/stars/h2oai/h2o-llmstudio?style=social&color=white) | No-code GUI framework for fine-tuning LLMs with enterprise features — designed for teams without deep ML expertise. |
+| **[llm-foundry](https://github.com/mosaicml/llm-foundry)** ![GitHub stars](https://img.shields.io/github/stars/mosaicml/llm-foundry?style=social&color=white) | MosaicML's **production LLM training stack** — configs for data prep, pre-training, instruction finetuning and evaluation. *(New addition)* |
+| **[open-instruct](https://github.com/allenai/open-instruct)** ![GitHub stars](https://img.shields.io/github/stars/allenai/open-instruct?style=social&color=white) | AI2's **single-command pipeline for SFT, DPO/PPO/GRPO and reward modeling** across clusters, used to post-train OLMo models. *(New addition)* |
+| **[OneTrainer](https://github.com/Nerogar/OneTrainer)** ![GitHub stars](https://img.shields.io/github/stars/Nerogar/OneTrainer?style=social&color=white) | One-stop solution for Stable Diffusion training needs. |
+| **[LLM-Finetuning (ashishpatel26)](https://github.com/ashishpatel26/LLM-Finetuning)** ![GitHub stars](https://img.shields.io/github/stars/ashishpatel26/LLM-Finetuning?style=social&color=white) | Comprehensive examples of fine-tuning with PEFT across multiple model families. |
+| **[SimpleTuner](https://github.com/bghira/SimpleTuner)** ![GitHub stars](https://img.shields.io/github/stars/bghira/SimpleTuner?style=social&color=white) | General fine-tuning kit for diffusion models. |
+| **[Maestro (Roboflow)](https://github.com/roboflow/maestro)** ![GitHub stars](https://img.shields.io/github/stars/roboflow/maestro?style=social&color=white) | Streamlined fine-tuning for multimodal models (PaliGemma 2, Florence-2, Qwen2.5-VL). |
+| **[xTuring](https://github.com/stochasticai/xTuring)** ![GitHub stars](https://img.shields.io/github/stars/stochasticai/xTuring?style=social&color=white) | Build, customize, and control your own LLMs from data preprocessing to fine-tuning. |
+| **[DB-GPT-Hub](https://github.com/eosphoros-ai/DB-GPT-Hub)** ![GitHub stars](https://img.shields.io/github/stars/eosphoros-ai/DB-GPT-Hub?style=social&color=white) | Text-to-SQL fine-tuning with models, datasets, and techniques. |
+| **[ZO2](https://github.com/liangyuwang/zo2)** ![GitHub stars](https://img.shields.io/github/stars/liangyuwang/zo2?style=social&color=white) | Zeroth-order offloading enabling **full-parameter fine-tuning of 175B LLMs with only 18GB GPU memory**. |
+| **[DeepSpeed-Chat-Extension](https://github.com/wangclnlp/DeepSpeed-Chat-Extension)** ![GitHub stars](https://img.shields.io/github/stars/wangclnlp/DeepSpeed-Chat-Extension?style=social&color=white) | Extensions for SFT and RLHF fine-tuning. |
 
 **Frameworks for building custom systems**: Combine **Unsloth** or **Axolotl** for training, **PEFT** for parameter-efficient methods, **TRL** for alignment, **LLaMA-Factory** for UI-driven experimentation, and **vLLM** or **SGLang** for high-throughput serving. For distributed training, layer in **DeepSpeed** or **FSDP**. For LoRA serving at scale, **LoRAX** (Predibase) enables thousands of adapters on a single base model .
 
