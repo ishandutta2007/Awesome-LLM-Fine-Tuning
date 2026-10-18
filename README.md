@@ -149,6 +149,10 @@ No — evaluate prompting, retrieval-augmented generation (RAG) and in-context e
 
 - Always evaluate whether prompting or RAG can solve your problem before committing to fine-tuning — 80% of perceived fine-tuning needs are better addressed upstream .
 
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-LLM-Fine-Tuning&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-LLM-Fine-Tuning&type=date&legend=top-left)
+
 ---
 
 🔍 **Popular searches:** LLM fine-tuning platforms · LoRA fine-tuning tools · QLoRA training · RLHF and DPO libraries · open-source LLM training · best fine-tuning framework 2026 · LLM fine-tuning pricing comparison · PEFT library.
